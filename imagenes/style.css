@@ -1,0 +1,181 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+}
+
+/* Variables */
+:root {
+    --bg-color-light: #FFFFFF;
+    --bg-color-dark: #6a0dad;
+    --primary-color: #6a0dad;
+    --secondary-color: #504375;
+    --font-color-light:#dcd1ff;
+    --radius: 11px;
+    --transition: 0.3s ease-in-out;
+}
+
+/* General Styles */
+.section-light {
+    background-color: var(--bg-color-light);
+    padding: 2rem 0;
+}
+
+.section-dark {
+    background-color: var(--bg-color-dark);
+    padding: 2rem 0;
+}
+
+.nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-weight: 500;
+}
+
+.profile-img {
+    border: 60px solid var(--primary-color);
+    border-radius: var(--radius);
+}
+
+.more-about{
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+
+}
+
+.more-about h2{
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+}
+.more-about p{
+    line-height: var(--line-height);
+    padding: 0.4rem;
+}
+
+/* Skills */
+.skills {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+
+}
+.skills-header {
+    margin-bottom: 1rem;
+}
+.skills-wrapper {
+    padding: 1.25rem;
+
+}
+.icon {
+    width: 11.875rem;
+    height: 11.25rem;
+}
+.icon-card {
+    background-color: #fff;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    border-radius: 11px;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Projects */
+.card {
+    border-radius: var(--radius);
+    
+}
+
+.card-title {
+    color: var(--primary-color);
+}
+
+/* Social Media Column */
+.socials {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+    gap: 15px; /* Añade un espacio entre los íconos */
+}
+
+.socicon {
+    width: 3.5rem;
+    height: 3.5rem;
+    transition: transform 0.3s ease; /* Añade una animación suave al hover */
+}
+
+.socicon:hover {
+    transform: scale(1.1); /* Efecto de agrandar al pasar el mouse */
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--secondary-color);
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+    background-color: var(--secondary-secondary-shadow);
+    color: var(--primary-color);
+    
+}
+
+/* Scroll Up Button */
+.scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer
+    ;
+}
+
+.up-arrow {
+    width: 3rem;
+    height: 3rem;
+}
+
+@media screen and (max-width: 420px){
+    .hero imag{
+        height: 17.5rem;
+        width: 10 rem;
+    }
+
+
+bio{
+    width: 18.3rem;
+}
+
+.project-conteiner{
+    width: 17.875rem;
+}
+}
+
+
